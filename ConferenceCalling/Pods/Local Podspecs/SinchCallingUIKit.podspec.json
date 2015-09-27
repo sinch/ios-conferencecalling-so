@@ -1,0 +1,33 @@
+{
+  "name": "SinchCallingUIKit",
+  "version": "0.1.15",
+  "summary": "A UI framework to help you build calling apps super quick",
+  "description": "Use this add calling to your app in minutes, includes a ios8 like calling screen to help you build quick prototypes.",
+  "homepage": "https://github.com/spacedsweden/SinchCallingUIKit",
+  "license": "MIT",
+  "authors": {
+    "d": "christian@sinch.com"
+  },
+  "source": {
+    "git": "https://github.com/sinch/SinchCallingUIKit.git",
+    "tag": "0.1.15"
+  },
+  "platforms": {
+    "ios": "8.1"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "SinchCallingUIKit": [
+      "Pod/Resources/**/*.{png,wav,xib}"
+    ]
+  },
+  "dependencies": {
+    "SinchRTC": [
+
+    ],
+    "SinchService": [
+
+    ]
+  }
+}

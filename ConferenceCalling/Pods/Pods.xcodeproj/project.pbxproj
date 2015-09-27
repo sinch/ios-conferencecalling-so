@@ -1,0 +1,938 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		027B1E668855BE67202914E4332911C6 /* SINSLazyMessageClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC966F70BDD317FB6DB5C84662547CE /* SINSLazyMessageClient.m */; };
+		0494F2F424E115591CA6CE8A58397433 /* SINSParameterValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C9384B94224DCAA76A4BC59CF3B724 /* SINSParameterValidation.h */; };
+		04D567598FB2B3A3A2E0F1E31F6B2CD1 /* SinchCallingUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D804247DDEEFB9170C9A33DF595DC /* SinchCallingUIKit-dummy.m */; };
+		05F225B427F4C92EAB0A6544D38C7D95 /* SINSLazyMessageClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 6763490C102933FAFB8D00EAD8F1DC0D /* SINSLazyMessageClient.h */; };
+		082CAA22A2A69AAF871BFED1443FEE6B /* SINManagedPush.h in Headers */ = {isa = PBXBuildFile; fileRef = D203D63FAC5102EDFEAE8B21F17A7431 /* SINManagedPush.h */; };
+		122EB1EC82C798BAAFB9DF31477E6D18 /* SINMessageNotificationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 495089AAE70168E12803EDCA1AB63696 /* SINMessageNotificationResult.h */; };
+		13793EBCB14259F6064768CC0973688C /* ClientDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2258A8D09FDBD3E34C48A7387329FF /* ClientDelegate.m */; };
+		18DE2430F4BF5F79FFA3CC8C76C3CE66 /* keypad_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F6772FD8642F886AE39C8BDAF4F7140B /* keypad_selected.png */; };
+		18ED9BFC13B341DC535C4226C8F43EEB /* ResourceLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D8D2C434F52DB81354C21384DDA359 /* ResourceLoader.h */; };
+		1FB3C20085DD911B0C2A25D3C20FC683 /* SINLogSeverity.h in Headers */ = {isa = PBXBuildFile; fileRef = 60AB8D79DB4E55F4D6A1DF7AC1B90EB9 /* SINLogSeverity.h */; };
+		21F28EE24E323A6E09BD5AC794AFC27E /* SINMessageClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 196533BA343DF6A5F87F7605BF7B668F /* SINMessageClient.h */; };
+		265170A247CCBCD46864547B00498E84 /* SINSClientsObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = EA370E555D06DBF42389BD6FE57BC972 /* SINSClientsObserver.m */; };
+		272163FF2EAFB8613A820333554E5AE6 /* SINService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E370E9C0E33C97AF69495F9E57C6237 /* SINService.m */; };
+		27DF74524ECC9672FBF37831AC5AB18F /* CallScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C943DAD20936D920A800D32DD57E3F7D /* CallScreenViewController.m */; };
+		296F7017604C187E4EBE813DE6757D59 /* ringback.wav in Resources */ = {isa = PBXBuildFile; fileRef = B3089D8813DDB2012A2789E24AF3B63C /* ringback.wav */; };
+		2A1D7F08DEF41D1DE204C55EA1990719 /* SINService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC4FDA57AE40F5083AA7F1043B986F6 /* SINService.h */; };
+		2BD769D8D42514B228BCCCEC1A9E6831 /* speaker_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = FB6BF31112B157722DBA80AFDDCC51A5 /* speaker_selected.png */; };
+		31380DF3AE58B14D267EF14A692D0E1D /* answer_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD2FDBE618687F6BB797F551C1A18E9 /* answer_button.png */; };
+		38C47CF3CB79FB042A981030F1CE76D6 /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2EFD48ADA6B2BF36F25B9B473B22F47C /* incoming.wav */; };
+		43F16585803C0F3E2F9095A2C1A0A33C /* SINAudioController.h in Headers */ = {isa = PBXBuildFile; fileRef = 11D87A5BE624194C087DC1722A9BA96D /* SINAudioController.h */; };
+		45AF588411B3F0764D97C4EE40874CE9 /* Sinch.h in Headers */ = {isa = PBXBuildFile; fileRef = A7DFF5165C950DFB5BFA71E170D4D07D /* Sinch.h */; };
+		4DB7F8DFB349BD08A1CF5779588A2871 /* SINSLazyCallClient.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2DE7694568AAF14A87787016375056 /* SINSLazyCallClient.h */; };
+		4E20516BD257ABADBCF7E2AA0D2BF9C4 /* SINSLazyCallClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A92E9F35D7B3E8BAD47A8ABE4ECCD570 /* SINSLazyCallClient.m */; };
+		547E31D52C2FF6F320D272EB634FA5BA /* SINServiceError.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C03D30D1FED51428AAEC35257B01F9B /* SINServiceError.m */; };
+		56079BFDE26C5EBFD02C822EE49D93F7 /* CallScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 687C34A5D02DEDB090E9E2D83B0C5CE7 /* CallScreenViewController.xib */; };
+		56A12C2907AFAA9F0EA6652046337203 /* CallScreenViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C58BA8C579EF863AD241623334FE52A /* CallScreenViewController.h */; };
+		57A19290599695520C8686793A20C928 /* SINCallNotificationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B1AE352CB26899553105C61F3910EB /* SINCallNotificationResult.h */; };
+		5FAA5B3A7501120BC1EEB176C92AEC35 /* SINError.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B4C14E0C13AA14E3DB6B636CF78EBF3 /* SINError.h */; };
+		635903D72AC8F1C32CC44CE0E78C85ED /* ClientDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F6F2B7BC53A68EB1AEEF0FF8794996 /* ClientDelegate.h */; };
+		6894AAAB8DEF446DD0575C5200C925A8 /* CallingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 51121DDAC3733FA2A0C8150997B5F355 /* CallingManager.h */; };
+		68DAD3566A7398336BE3358EEF29516A /* SINSServicePersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = 02002FB7804744D90DDD40CAA3F8D74C /* SINSServicePersistence.h */; };
+		6D9749508F7BC18B77D64377F62B6772 /* SINClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F943737CE9A991F37B719118448E00AC /* SINClient.h */; };
+		73DF9F245FEFE1A67EAB73D49C0674B3 /* SINMessageDeliveryInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 54AD2B871C0DB961DED2802CB5DB6DCC /* SINMessageDeliveryInfo.h */; };
+		794E312D2743069C9A37AFA526F8FEBF /* SINSLazyAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 370D9B2DE0F03E18CBACC9C131AD339E /* SINSLazyAudioController.m */; };
+		7E40BFD526815D9B8827D5B862B60818 /* SINCallDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 0610F4EC2B09EEC7A35CF9D6C3F76DC0 /* SINCallDetails.h */; };
+		8038CAA9876275EFD4E751CE38415102 /* SINSClientsObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BBE9DEC915FAC578BE476CBE8A8858B /* SINSClientsObserver.h */; };
+		85EABA888474818852CDDCB32C68F505 /* SINMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E0ECAF25BF1C9E82BA3EB6163766CC80 /* SINMessage.h */; };
+		87DB13DADE21804E7FC9D40F8ACB04C9 /* mute_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 48AA34E37BAE4A9820DC63F9FC5965A2 /* mute_selected.png */; };
+		88A8D5C99B82CB5BFD392F4EF410404D /* ResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED734F03AADA66A5CF2F28FB7745F3F /* ResourceLoader.m */; };
+		8C5F55364666D87F136D4015006A23B5 /* SINOutgoingMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B3C34B1D7C7955356CB650E7882A8D /* SINOutgoingMessage.h */; };
+		8CEC92F393E6AB2198D0ADBE5E2E4F14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3E38C45D2733F2CA780CBB7A84622B /* Foundation.framework */; };
+		90CE3230896489E6CF78BFA8649961B8 /* SINMessageFailureInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 43460EBCAA2CE7F95C42E935767DCCAE /* SINMessageFailureInfo.h */; };
+		9518B6A141EB51C60F5E78B9070C6297 /* SinchService.h in Headers */ = {isa = PBXBuildFile; fileRef = 613C7A764BCCEF3CB7B88A8FCC4C0F9B /* SinchService.h */; };
+		9D55E1F57CCCEBB2CD030A8461C6A44A /* SINExport.h in Headers */ = {isa = PBXBuildFile; fileRef = A7EEC0283B377076533AB2607710F402 /* SINExport.h */; };
+		A069051577B201F75C8B2BFC95C31A1D /* SINSServicePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 143AD2FB299066186800B9A9356D32DE /* SINSServicePersistence.m */; };
+		A098E4F03661B907EF68DCE364D749BF /* mute.png in Resources */ = {isa = PBXBuildFile; fileRef = 241067C8A2A80EF4DCF66000006E0634 /* mute.png */; };
+		A1A824CE131A2E97CB596E9B49E4E450 /* SinchService.m in Sources */ = {isa = PBXBuildFile; fileRef = D06B113FC348247B86D36A0CD151BDA5 /* SinchService.m */; };
+		AAF4D8312C68CE48D2E82DC4DF0A5259 /* SINAPSEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = B1FF1A003E82DC474E61CED1F6BE3DD1 /* SINAPSEnvironment.h */; };
+		AE07E3AB824B7CA0BD4DD56324571C2A /* SINCall.h in Headers */ = {isa = PBXBuildFile; fileRef = 290BD4501143EAE156FAA2C5A08E0510 /* SINCall.h */; };
+		AE0A73C26A2D498F297FE89BEA0A9E58 /* SINNotificationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD3207158AB066A554F9B99A39BF0E9 /* SINNotificationResult.h */; };
+		B002011770D51DE8C4C1634E3A2B38AF /* SINServiceError.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B4C5BEDA46ED848999D2FCD4BDF468 /* SINServiceError.h */; };
+		B0BE11B5E34C8AE53E3FD382C0A60479 /* CallingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EE9CF518F9514787EF770A0B48799D /* CallingManager.m */; };
+		B1D0F906F48BF779F910F40E0D657154 /* SinchService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B4456CB743D5693288EC92DA063E69 /* SinchService-dummy.m */; };
+		B5023AF707841859F01C2BE97ECC322F /* SINSLazyProxyBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 075AF6CF71BF4C3F569BC3B2C8968791 /* SINSLazyProxyBase.m */; };
+		B72E137DA53B6F7AA8DD1D9B0E14D8D4 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D78C9C7F85BA3976A3C82B31DCA85489 /* Pods-dummy.m */; };
+		B96248647A8F91F0B2E518D03F5A6C69 /* SINPushPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 70391FE66502F54C15A03A8967E4EBF9 /* SINPushPair.h */; };
+		B96633A1017E57A7F01847CE7ED16D59 /* SINLocalNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FE67ED65F1A4E926CD0B7AED7DD321 /* SINLocalNotification.h */; };
+		BE640BDBBD836D5BC0923DCCEBB56337 /* SINCallClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6178FFC11F582FE9F8B69BD83923AD /* SINCallClient.h */; };
+		C41E42803B5E1798E891E0CB4A811375 /* SinchCallingUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB3E04F12B2D843A1B3A06450D31845 /* SinchCallingUIKit.h */; };
+		D173E56FCA52C8BA60D4945E69CBB416 /* keypad.png in Resources */ = {isa = PBXBuildFile; fileRef = F9169AB86F30E3C8A092DD6D6D6AF3A5 /* keypad.png */; };
+		D2A8E56C457ED464F6269360C14AEDDC /* SINUILocalNotification+Sinch.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CCF9C946371C1B58619892FED71E0FA /* SINUILocalNotification+Sinch.h */; };
+		DAA50867EE2B74B443AA41E18EFA94DA /* SINForwardDeclarations.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D5670064E1F37691F2F7BA37C77B7B /* SINForwardDeclarations.h */; };
+		E1224E3544F8D82AF1AA021BD6F64D4B /* hangup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDF9AD79DEA29A1830F32D264F3308E /* hangup.png */; };
+		E298E1EA1B29F8FBF5AD37FE7B600850 /* SINSLazyProxyBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B65E39051893FA54A2537978347B630 /* SINSLazyProxyBase.h */; };
+		E81E5226974712BF41A707B5130FA1E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3E38C45D2733F2CA780CBB7A84622B /* Foundation.framework */; };
+		E93B318505963B1F3E70B7F9C5690728 /* SINClientRegistration.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B971AC496DF2A1AE664207B988BAB5A /* SINClientRegistration.h */; };
+		EA41E25EAE458432AFE57B24F2036250 /* speaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B53A73471D5E804F854DD82E25A4DF7 /* speaker.png */; };
+		F68879E54BE41BBF5DD3A7E5045DC1E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3E38C45D2733F2CA780CBB7A84622B /* Foundation.framework */; };
+		FF0F6CA050E92DC6C82D7E782904BF55 /* SINSLazyAudioController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CD4FD94BF0B80981DD48648D278B1C3 /* SINSLazyAudioController.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25173A127819BA8D5F59758D87D93B06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE2428C920458F93EFC9AC9FC99ADFC5;
+			remoteInfo = SinchCallingUIKit;
+		};
+		54325C033773F2E81A6F2BF566A9F8C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE1148C4208D66831D831C265C9B7E3F;
+			remoteInfo = SinchService;
+		};
+		A3C9B5BBEE5A5ACA260FB1DA0DEED19B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE1148C4208D66831D831C265C9B7E3F;
+			remoteInfo = SinchService;
+		};
+		A46171A75599CDA3946478EE47598A36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C939F7C0900D837960B29C516DFC7C7;
+			remoteInfo = "SinchCallingUIKit-SinchCallingUIKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0196F8E79D05C216AE2F2149BE2DE2B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		02002FB7804744D90DDD40CAA3F8D74C /* SINSServicePersistence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINSServicePersistence.h; path = SinchService/SINSServicePersistence.h; sourceTree = "<group>"; };
+		03B3C34B1D7C7955356CB650E7882A8D /* SINOutgoingMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINOutgoingMessage.h; path = SinchService/PrivateHeaders/Sinch/SINOutgoingMessage.h; sourceTree = "<group>"; };
+		0610F4EC2B09EEC7A35CF9D6C3F76DC0 /* SINCallDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINCallDetails.h; path = SinchService/PrivateHeaders/Sinch/SINCallDetails.h; sourceTree = "<group>"; };
+		06F6F2B7BC53A68EB1AEEF0FF8794996 /* ClientDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ClientDelegate.h; path = Pod/Classes/Controllers/ClientDelegate.h; sourceTree = "<group>"; };
+		075AF6CF71BF4C3F569BC3B2C8968791 /* SINSLazyProxyBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SINSLazyProxyBase.m; path = SinchService/SINSLazyProxyBase.m; sourceTree = "<group>"; };
+		0A2258A8D09FDBD3E34C48A7387329FF /* ClientDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ClientDelegate.m; path = Pod/Classes/Controllers/ClientDelegate.m; sourceTree = "<group>"; };
+		11D87A5BE624194C087DC1722A9BA96D /* SINAudioController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINAudioController.h; path = SinchService/PrivateHeaders/Sinch/SINAudioController.h; sourceTree = "<group>"; };
+		143AD2FB299066186800B9A9356D32DE /* SINSServicePersistence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SINSServicePersistence.m; path = SinchService/SINSServicePersistence.m; sourceTree = "<group>"; };
+		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		196533BA343DF6A5F87F7605BF7B668F /* SINMessageClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINMessageClient.h; path = SinchService/PrivateHeaders/Sinch/SINMessageClient.h; sourceTree = "<group>"; };
+		1AC4FDA57AE40F5083AA7F1043B986F6 /* SINService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINService.h; path = SinchService/SINService.h; sourceTree = "<group>"; };
+		1BBE9DEC915FAC578BE476CBE8A8858B /* SINSClientsObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINSClientsObserver.h; path = SinchService/SINSClientsObserver.h; sourceTree = "<group>"; };
+		1BDAFDB450E4FACBE5D4A881EE006507 /* SinchCallingUIKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinchCallingUIKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		241067C8A2A80EF4DCF66000006E0634 /* mute.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = mute.png; path = Pod/Resources/mute.png; sourceTree = "<group>"; };
+		24B4C5BEDA46ED848999D2FCD4BDF468 /* SINServiceError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINServiceError.h; path = SinchService/SINServiceError.h; sourceTree = "<group>"; };
+		290BD4501143EAE156FAA2C5A08E0510 /* SINCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINCall.h; path = SinchService/PrivateHeaders/Sinch/SINCall.h; sourceTree = "<group>"; };
+		2EFD48ADA6B2BF36F25B9B473B22F47C /* incoming.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = incoming.wav; path = Pod/Resources/incoming.wav; sourceTree = "<group>"; };
+		2FDF9AD79DEA29A1830F32D264F3308E /* hangup.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = hangup.png; path = Pod/Resources/hangup.png; sourceTree = "<group>"; };
+		370D9B2DE0F03E18CBACC9C131AD339E /* SINSLazyAudioController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SINSLazyAudioController.m; path = SinchService/SINSLazyAudioController.m; sourceTree = "<group>"; };
+		3DC966F70BDD317FB6DB5C84662547CE /* SINSLazyMessageClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SINSLazyMessageClient.m; path = SinchService/SINSLazyMessageClient.m; sourceTree = "<group>"; };
+		43460EBCAA2CE7F95C42E935767DCCAE /* SINMessageFailureInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINMessageFailureInfo.h; path = SinchService/PrivateHeaders/Sinch/SINMessageFailureInfo.h; sourceTree = "<group>"; };
+		44385FD3EDEE405783AB4D4181F71103 /* libSinchService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSinchService.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D5670064E1F37691F2F7BA37C77B7B /* SINForwardDeclarations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINForwardDeclarations.h; path = SinchService/PrivateHeaders/Sinch/SINForwardDeclarations.h; sourceTree = "<group>"; };
+		48AA34E37BAE4A9820DC63F9FC5965A2 /* mute_selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = mute_selected.png; path = Pod/Resources/mute_selected.png; sourceTree = "<group>"; };
+		495089AAE70168E12803EDCA1AB63696 /* SINMessageNotificationResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINMessageNotificationResult.h; path = SinchService/PrivateHeaders/Sinch/SINMessageNotificationResult.h; sourceTree = "<group>"; };
+		4B3AD90AA901E097C3052B2A6B063961 /* Sinch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sinch.framework; sourceTree = "<group>"; };
+		4C779098F8F9DC625C5EE3A9EBC6C644 /* SinchCallingUIKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SinchCallingUIKit-Private.xcconfig"; sourceTree = "<group>"; };
+		4DA1690809C00189E2A3915B1511E3DC /* SinchCallingUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SinchCallingUIKit.xcconfig; sourceTree = "<group>"; };
+		4F943239ED8BFCDBF7E12FD05F2A3E8D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		51121DDAC3733FA2A0C8150997B5F355 /* CallingManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CallingManager.h; path = Pod/Classes/CallingManager.h; sourceTree = "<group>"; };
+		54AD2B871C0DB961DED2802CB5DB6DCC /* SINMessageDeliveryInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINMessageDeliveryInfo.h; path = SinchService/PrivateHeaders/Sinch/SINMessageDeliveryInfo.h; sourceTree = "<group>"; };
+		5B6A4D215F6B8AD20BFDCB9D000134E3 /* SinchService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SinchService.xcconfig; sourceTree = "<group>"; };
+		5E370E9C0E33C97AF69495F9E57C6237 /* SINService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SINService.m; path = SinchService/SINService.m; sourceTree = "<group>"; };
+		5EB3E04F12B2D843A1B3A06450D31845 /* SinchCallingUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SinchCallingUIKit.h; path = Pod/Classes/SinchCallingUIKit.h; sourceTree = "<group>"; };
+		60AB8D79DB4E55F4D6A1DF7AC1B90EB9 /* SINLogSeverity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINLogSeverity.h; path = SinchService/PrivateHeaders/Sinch/SINLogSeverity.h; sourceTree = "<group>"; };
+		613C7A764BCCEF3CB7B88A8FCC4C0F9B /* SinchService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SinchService.h; path = SinchService/SinchService.h; sourceTree = "<group>"; };
+		6357BE93CD22459A6402E9E3352EBE23 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		6763490C102933FAFB8D00EAD8F1DC0D /* SINSLazyMessageClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINSLazyMessageClient.h; path = SinchService/SINSLazyMessageClient.h; sourceTree = "<group>"; };
+		687C34A5D02DEDB090E9E2D83B0C5CE7 /* CallScreenViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CallScreenViewController.xib; path = Pod/Resources/CallScreenViewController.xib; sourceTree = "<group>"; };
+		6B4C14E0C13AA14E3DB6B636CF78EBF3 /* SINError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINError.h; path = SinchService/PrivateHeaders/Sinch/SINError.h; sourceTree = "<group>"; };
+		6B65E39051893FA54A2537978347B630 /* SINSLazyProxyBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINSLazyProxyBase.h; path = SinchService/SINSLazyProxyBase.h; sourceTree = "<group>"; };
+		6C03D30D1FED51428AAEC35257B01F9B /* SINServiceError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SINServiceError.m; path = SinchService/SINServiceError.m; sourceTree = "<group>"; };
+		6C58BA8C579EF863AD241623334FE52A /* CallScreenViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CallScreenViewController.h; path = Pod/Classes/Controllers/CallScreenViewController.h; sourceTree = "<group>"; };
+		6CCF9C946371C1B58619892FED71E0FA /* SINUILocalNotification+Sinch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SINUILocalNotification+Sinch.h"; path = "SinchService/PrivateHeaders/Sinch/SINUILocalNotification+Sinch.h"; sourceTree = "<group>"; };
+		70391FE66502F54C15A03A8967E4EBF9 /* SINPushPair.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINPushPair.h; path = SinchService/PrivateHeaders/Sinch/SINPushPair.h; sourceTree = "<group>"; };
+		764800C84FC533C1C620DD8299AC003C /* SinchCallingUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SinchCallingUIKit-prefix.pch"; sourceTree = "<group>"; };
+		774E4E504FF25FED817DB2CCB6871B87 /* SinchService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SinchService-prefix.pch"; sourceTree = "<group>"; };
+		77B4456CB743D5693288EC92DA063E69 /* SinchService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SinchService-dummy.m"; sourceTree = "<group>"; };
+		8CD4FD94BF0B80981DD48648D278B1C3 /* SINSLazyAudioController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINSLazyAudioController.h; path = SinchService/SINSLazyAudioController.h; sourceTree = "<group>"; };
+		8ED734F03AADA66A5CF2F28FB7745F3F /* ResourceLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ResourceLoader.m; path = Pod/Classes/ResourceLoader.m; sourceTree = "<group>"; };
+		9B53A73471D5E804F854DD82E25A4DF7 /* speaker.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = speaker.png; path = Pod/Resources/speaker.png; sourceTree = "<group>"; };
+		9B971AC496DF2A1AE664207B988BAB5A /* SINClientRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINClientRegistration.h; path = SinchService/PrivateHeaders/Sinch/SINClientRegistration.h; sourceTree = "<group>"; };
+		A3CB61F89849AFD004D615F781981804 /* SinchService-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SinchService-Private.xcconfig"; sourceTree = "<group>"; };
+		A7DFF5165C950DFB5BFA71E170D4D07D /* Sinch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sinch.h; path = SinchService/PrivateHeaders/Sinch/Sinch.h; sourceTree = "<group>"; };
+		A7EEC0283B377076533AB2607710F402 /* SINExport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINExport.h; path = SinchService/PrivateHeaders/Sinch/SINExport.h; sourceTree = "<group>"; };
+		A92E9F35D7B3E8BAD47A8ABE4ECCD570 /* SINSLazyCallClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SINSLazyCallClient.m; path = SinchService/SINSLazyCallClient.m; sourceTree = "<group>"; };
+		B1FF1A003E82DC474E61CED1F6BE3DD1 /* SINAPSEnvironment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINAPSEnvironment.h; path = SinchService/PrivateHeaders/Sinch/SINAPSEnvironment.h; sourceTree = "<group>"; };
+		B3089D8813DDB2012A2789E24AF3B63C /* ringback.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = ringback.wav; path = Pod/Resources/ringback.wav; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BCD3207158AB066A554F9B99A39BF0E9 /* SINNotificationResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINNotificationResult.h; path = SinchService/PrivateHeaders/Sinch/SINNotificationResult.h; sourceTree = "<group>"; };
+		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF6178FFC11F582FE9F8B69BD83923AD /* SINCallClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINCallClient.h; path = SinchService/PrivateHeaders/Sinch/SINCallClient.h; sourceTree = "<group>"; };
+		BFD2FDBE618687F6BB797F551C1A18E9 /* answer_button.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = answer_button.png; path = Pod/Resources/answer_button.png; sourceTree = "<group>"; };
+		C3B1AE352CB26899553105C61F3910EB /* SINCallNotificationResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINCallNotificationResult.h; path = SinchService/PrivateHeaders/Sinch/SINCallNotificationResult.h; sourceTree = "<group>"; };
+		C943DAD20936D920A800D32DD57E3F7D /* CallScreenViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CallScreenViewController.m; path = Pod/Classes/Controllers/CallScreenViewController.m; sourceTree = "<group>"; };
+		D06B113FC348247B86D36A0CD151BDA5 /* SinchService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SinchService.m; path = SinchService/SinchService.m; sourceTree = "<group>"; };
+		D0EE9CF518F9514787EF770A0B48799D /* CallingManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CallingManager.m; path = Pod/Classes/CallingManager.m; sourceTree = "<group>"; };
+		D203D63FAC5102EDFEAE8B21F17A7431 /* SINManagedPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINManagedPush.h; path = SinchService/PrivateHeaders/Sinch/SINManagedPush.h; sourceTree = "<group>"; };
+		D3C9384B94224DCAA76A4BC59CF3B724 /* SINSParameterValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINSParameterValidation.h; path = SinchService/SINSParameterValidation.h; sourceTree = "<group>"; };
+		D78C9C7F85BA3976A3C82B31DCA85489 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		D8D8D2C434F52DB81354C21384DDA359 /* ResourceLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ResourceLoader.h; path = Pod/Classes/ResourceLoader.h; sourceTree = "<group>"; };
+		D9048B8464277F9848C0D2BD2A973C96 /* libSinchCallingUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSinchCallingUIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3E38C45D2733F2CA780CBB7A84622B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E0ECAF25BF1C9E82BA3EB6163766CC80 /* SINMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINMessage.h; path = SinchService/PrivateHeaders/Sinch/SINMessage.h; sourceTree = "<group>"; };
+		E31D804247DDEEFB9170C9A33DF595DC /* SinchCallingUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SinchCallingUIKit-dummy.m"; sourceTree = "<group>"; };
+		EA370E555D06DBF42389BD6FE57BC972 /* SINSClientsObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SINSClientsObserver.m; path = SinchService/SINSClientsObserver.m; sourceTree = "<group>"; };
+		ED2DE7694568AAF14A87787016375056 /* SINSLazyCallClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINSLazyCallClient.h; path = SinchService/SINSLazyCallClient.h; sourceTree = "<group>"; };
+		F0FE67ED65F1A4E926CD0B7AED7DD321 /* SINLocalNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINLocalNotification.h; path = SinchService/PrivateHeaders/Sinch/SINLocalNotification.h; sourceTree = "<group>"; };
+		F6772FD8642F886AE39C8BDAF4F7140B /* keypad_selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = keypad_selected.png; path = Pod/Resources/keypad_selected.png; sourceTree = "<group>"; };
+		F9169AB86F30E3C8A092DD6D6D6AF3A5 /* keypad.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = keypad.png; path = Pod/Resources/keypad.png; sourceTree = "<group>"; };
+		F943737CE9A991F37B719118448E00AC /* SINClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SINClient.h; path = SinchService/PrivateHeaders/Sinch/SINClient.h; sourceTree = "<group>"; };
+		FB6BF31112B157722DBA80AFDDCC51A5 /* speaker_selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = speaker_selected.png; path = Pod/Resources/speaker_selected.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F3C92E223F9352CB0FA35F7EE009909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CEC92F393E6AB2198D0ADBE5E2E4F14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C84A904B60394D0209AD9B1D19BEF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68879E54BE41BBF5DD3A7E5045DC1E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F9BF9F0FAC291BB46285BF628455369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81E5226974712BF41A707B5130FA1E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B38481B96AC5911B4DDD12BE256DA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F1C58D0FE676CCF239A716FD7A076EC /* SinchRTC */ = {
+			isa = PBXGroup;
+			children = (
+				8A8D5590F10DD7B013D913BB910C33C1 /* Frameworks */,
+			);
+			path = SinchRTC;
+			sourceTree = "<group>";
+		};
+		267CBA64B26540A0A4D85DAFF724A4B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				687C34A5D02DEDB090E9E2D83B0C5CE7 /* CallScreenViewController.xib */,
+				BFD2FDBE618687F6BB797F551C1A18E9 /* answer_button.png */,
+				2FDF9AD79DEA29A1830F32D264F3308E /* hangup.png */,
+				2EFD48ADA6B2BF36F25B9B473B22F47C /* incoming.wav */,
+				F9169AB86F30E3C8A092DD6D6D6AF3A5 /* keypad.png */,
+				F6772FD8642F886AE39C8BDAF4F7140B /* keypad_selected.png */,
+				241067C8A2A80EF4DCF66000006E0634 /* mute.png */,
+				48AA34E37BAE4A9820DC63F9FC5965A2 /* mute_selected.png */,
+				B3089D8813DDB2012A2789E24AF3B63C /* ringback.wav */,
+				9B53A73471D5E804F854DD82E25A4DF7 /* speaker.png */,
+				FB6BF31112B157722DBA80AFDDCC51A5 /* speaker_selected.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		28E259407017AFD94D7966A8B0068643 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DA1690809C00189E2A3915B1511E3DC /* SinchCallingUIKit.xcconfig */,
+				4C779098F8F9DC625C5EE3A9EBC6C644 /* SinchCallingUIKit-Private.xcconfig */,
+				E31D804247DDEEFB9170C9A33DF595DC /* SinchCallingUIKit-dummy.m */,
+				764800C84FC533C1C620DD8299AC003C /* SinchCallingUIKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SinchCallingUIKit";
+			sourceTree = "<group>";
+		};
+		3FA2DA248DEEB7F9CFFC369B3E3A9124 /* SinchCallingUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				6C58BA8C579EF863AD241623334FE52A /* CallScreenViewController.h */,
+				C943DAD20936D920A800D32DD57E3F7D /* CallScreenViewController.m */,
+				51121DDAC3733FA2A0C8150997B5F355 /* CallingManager.h */,
+				D0EE9CF518F9514787EF770A0B48799D /* CallingManager.m */,
+				06F6F2B7BC53A68EB1AEEF0FF8794996 /* ClientDelegate.h */,
+				0A2258A8D09FDBD3E34C48A7387329FF /* ClientDelegate.m */,
+				D8D8D2C434F52DB81354C21384DDA359 /* ResourceLoader.h */,
+				8ED734F03AADA66A5CF2F28FB7745F3F /* ResourceLoader.m */,
+				5EB3E04F12B2D843A1B3A06450D31845 /* SinchCallingUIKit.h */,
+				267CBA64B26540A0A4D85DAFF724A4B8 /* Resources */,
+				28E259407017AFD94D7966A8B0068643 /* Support Files */,
+			);
+			path = SinchCallingUIKit;
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DD3E38C45D2733F2CA780CBB7A84622B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6CF1BA2B9846CFD9BE1DFECE2F4D6A86 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A4D215F6B8AD20BFDCB9D000134E3 /* SinchService.xcconfig */,
+				A3CB61F89849AFD004D615F781981804 /* SinchService-Private.xcconfig */,
+				77B4456CB743D5693288EC92DA063E69 /* SinchService-dummy.m */,
+				774E4E504FF25FED817DB2CCB6871B87 /* SinchService-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SinchService";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F7075D3078211E36E4271E12E8EA4DED /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A8D5590F10DD7B013D913BB910C33C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B3AD90AA901E097C3052B2A6B063961 /* Sinch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */,
+				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
+				D78C9C7F85BA3976A3C82B31DCA85489 /* Pods-dummy.m */,
+				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
+				0196F8E79D05C216AE2F2149BE2DE2B3 /* Pods.debug.xcconfig */,
+				6357BE93CD22459A6402E9E3352EBE23 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		B87AC3AB1386ABC87906A23A1272B873 /* SinchHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				B1FF1A003E82DC474E61CED1F6BE3DD1 /* SINAPSEnvironment.h */,
+				11D87A5BE624194C087DC1722A9BA96D /* SINAudioController.h */,
+				290BD4501143EAE156FAA2C5A08E0510 /* SINCall.h */,
+				BF6178FFC11F582FE9F8B69BD83923AD /* SINCallClient.h */,
+				0610F4EC2B09EEC7A35CF9D6C3F76DC0 /* SINCallDetails.h */,
+				C3B1AE352CB26899553105C61F3910EB /* SINCallNotificationResult.h */,
+				F943737CE9A991F37B719118448E00AC /* SINClient.h */,
+				9B971AC496DF2A1AE664207B988BAB5A /* SINClientRegistration.h */,
+				6B4C14E0C13AA14E3DB6B636CF78EBF3 /* SINError.h */,
+				A7EEC0283B377076533AB2607710F402 /* SINExport.h */,
+				46D5670064E1F37691F2F7BA37C77B7B /* SINForwardDeclarations.h */,
+				F0FE67ED65F1A4E926CD0B7AED7DD321 /* SINLocalNotification.h */,
+				60AB8D79DB4E55F4D6A1DF7AC1B90EB9 /* SINLogSeverity.h */,
+				D203D63FAC5102EDFEAE8B21F17A7431 /* SINManagedPush.h */,
+				E0ECAF25BF1C9E82BA3EB6163766CC80 /* SINMessage.h */,
+				196533BA343DF6A5F87F7605BF7B668F /* SINMessageClient.h */,
+				54AD2B871C0DB961DED2802CB5DB6DCC /* SINMessageDeliveryInfo.h */,
+				43460EBCAA2CE7F95C42E935767DCCAE /* SINMessageFailureInfo.h */,
+				495089AAE70168E12803EDCA1AB63696 /* SINMessageNotificationResult.h */,
+				BCD3207158AB066A554F9B99A39BF0E9 /* SINNotificationResult.h */,
+				03B3C34B1D7C7955356CB650E7882A8D /* SINOutgoingMessage.h */,
+				70391FE66502F54C15A03A8967E4EBF9 /* SINPushPair.h */,
+				6CCF9C946371C1B58619892FED71E0FA /* SINUILocalNotification+Sinch.h */,
+				A7DFF5165C950DFB5BFA71E170D4D07D /* Sinch.h */,
+			);
+			name = SinchHeaders;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BDAFDB450E4FACBE5D4A881EE006507 /* SinchCallingUIKit.bundle */,
+				4F943239ED8BFCDBF7E12FD05F2A3E8D /* libPods.a */,
+				D9048B8464277F9848C0D2BD2A973C96 /* libSinchCallingUIKit.a */,
+				44385FD3EDEE405783AB4D4181F71103 /* libSinchService.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCD9564B4A28C951CD2A1FD9EBBE1894 /* SinchService */ = {
+			isa = PBXGroup;
+			children = (
+				1BBE9DEC915FAC578BE476CBE8A8858B /* SINSClientsObserver.h */,
+				EA370E555D06DBF42389BD6FE57BC972 /* SINSClientsObserver.m */,
+				8CD4FD94BF0B80981DD48648D278B1C3 /* SINSLazyAudioController.h */,
+				370D9B2DE0F03E18CBACC9C131AD339E /* SINSLazyAudioController.m */,
+				ED2DE7694568AAF14A87787016375056 /* SINSLazyCallClient.h */,
+				A92E9F35D7B3E8BAD47A8ABE4ECCD570 /* SINSLazyCallClient.m */,
+				6763490C102933FAFB8D00EAD8F1DC0D /* SINSLazyMessageClient.h */,
+				3DC966F70BDD317FB6DB5C84662547CE /* SINSLazyMessageClient.m */,
+				6B65E39051893FA54A2537978347B630 /* SINSLazyProxyBase.h */,
+				075AF6CF71BF4C3F569BC3B2C8968791 /* SINSLazyProxyBase.m */,
+				D3C9384B94224DCAA76A4BC59CF3B724 /* SINSParameterValidation.h */,
+				02002FB7804744D90DDD40CAA3F8D74C /* SINSServicePersistence.h */,
+				143AD2FB299066186800B9A9356D32DE /* SINSServicePersistence.m */,
+				1AC4FDA57AE40F5083AA7F1043B986F6 /* SINService.h */,
+				5E370E9C0E33C97AF69495F9E57C6237 /* SINService.m */,
+				24B4C5BEDA46ED848999D2FCD4BDF468 /* SINServiceError.h */,
+				6C03D30D1FED51428AAEC35257B01F9B /* SINServiceError.m */,
+				613C7A764BCCEF3CB7B88A8FCC4C0F9B /* SinchService.h */,
+				D06B113FC348247B86D36A0CD151BDA5 /* SinchService.m */,
+				B87AC3AB1386ABC87906A23A1272B873 /* SinchHeaders */,
+				6CF1BA2B9846CFD9BE1DFECE2F4D6A86 /* Support Files */,
+			);
+			path = SinchService;
+			sourceTree = "<group>";
+		};
+		D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				952EEBFAF8F7E620423C9F156F25A506 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F7075D3078211E36E4271E12E8EA4DED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FA2DA248DEEB7F9CFFC369B3E3A9124 /* SinchCallingUIKit */,
+				0F1C58D0FE676CCF239A716FD7A076EC /* SinchRTC */,
+				CCD9564B4A28C951CD2A1FD9EBBE1894 /* SinchService */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65ECD7BB736E319E59D792CE8891B40F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A12C2907AFAA9F0EA6652046337203 /* CallScreenViewController.h in Headers */,
+				6894AAAB8DEF446DD0575C5200C925A8 /* CallingManager.h in Headers */,
+				635903D72AC8F1C32CC44CE0E78C85ED /* ClientDelegate.h in Headers */,
+				18ED9BFC13B341DC535C4226C8F43EEB /* ResourceLoader.h in Headers */,
+				C41E42803B5E1798E891E0CB4A811375 /* SinchCallingUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2991C4F6D068A0972CBC72095763AD3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF4D8312C68CE48D2E82DC4DF0A5259 /* SINAPSEnvironment.h in Headers */,
+				43F16585803C0F3E2F9095A2C1A0A33C /* SINAudioController.h in Headers */,
+				AE07E3AB824B7CA0BD4DD56324571C2A /* SINCall.h in Headers */,
+				BE640BDBBD836D5BC0923DCCEBB56337 /* SINCallClient.h in Headers */,
+				7E40BFD526815D9B8827D5B862B60818 /* SINCallDetails.h in Headers */,
+				57A19290599695520C8686793A20C928 /* SINCallNotificationResult.h in Headers */,
+				6D9749508F7BC18B77D64377F62B6772 /* SINClient.h in Headers */,
+				E93B318505963B1F3E70B7F9C5690728 /* SINClientRegistration.h in Headers */,
+				5FAA5B3A7501120BC1EEB176C92AEC35 /* SINError.h in Headers */,
+				9D55E1F57CCCEBB2CD030A8461C6A44A /* SINExport.h in Headers */,
+				DAA50867EE2B74B443AA41E18EFA94DA /* SINForwardDeclarations.h in Headers */,
+				B96633A1017E57A7F01847CE7ED16D59 /* SINLocalNotification.h in Headers */,
+				1FB3C20085DD911B0C2A25D3C20FC683 /* SINLogSeverity.h in Headers */,
+				082CAA22A2A69AAF871BFED1443FEE6B /* SINManagedPush.h in Headers */,
+				85EABA888474818852CDDCB32C68F505 /* SINMessage.h in Headers */,
+				21F28EE24E323A6E09BD5AC794AFC27E /* SINMessageClient.h in Headers */,
+				73DF9F245FEFE1A67EAB73D49C0674B3 /* SINMessageDeliveryInfo.h in Headers */,
+				90CE3230896489E6CF78BFA8649961B8 /* SINMessageFailureInfo.h in Headers */,
+				122EB1EC82C798BAAFB9DF31477E6D18 /* SINMessageNotificationResult.h in Headers */,
+				AE0A73C26A2D498F297FE89BEA0A9E58 /* SINNotificationResult.h in Headers */,
+				8C5F55364666D87F136D4015006A23B5 /* SINOutgoingMessage.h in Headers */,
+				B96248647A8F91F0B2E518D03F5A6C69 /* SINPushPair.h in Headers */,
+				8038CAA9876275EFD4E751CE38415102 /* SINSClientsObserver.h in Headers */,
+				FF0F6CA050E92DC6C82D7E782904BF55 /* SINSLazyAudioController.h in Headers */,
+				4DB7F8DFB349BD08A1CF5779588A2871 /* SINSLazyCallClient.h in Headers */,
+				05F225B427F4C92EAB0A6544D38C7D95 /* SINSLazyMessageClient.h in Headers */,
+				E298E1EA1B29F8FBF5AD37FE7B600850 /* SINSLazyProxyBase.h in Headers */,
+				0494F2F424E115591CA6CE8A58397433 /* SINSParameterValidation.h in Headers */,
+				68DAD3566A7398336BE3358EEF29516A /* SINSServicePersistence.h in Headers */,
+				2A1D7F08DEF41D1DE204C55EA1990719 /* SINService.h in Headers */,
+				B002011770D51DE8C4C1634E3A2B38AF /* SINServiceError.h in Headers */,
+				D2A8E56C457ED464F6269360C14AEDDC /* SINUILocalNotification+Sinch.h in Headers */,
+				45AF588411B3F0764D97C4EE40874CE9 /* Sinch.h in Headers */,
+				9518B6A141EB51C60F5E78B9070C6297 /* SinchService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C939F7C0900D837960B29C516DFC7C7 /* SinchCallingUIKit-SinchCallingUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35CC611EFC09930AB90DDFD2200D483C /* Build configuration list for PBXNativeTarget "SinchCallingUIKit-SinchCallingUIKit" */;
+			buildPhases = (
+				E174E868556B6876EDEC5DF9059565AF /* Sources */,
+				B7B38481B96AC5911B4DDD12BE256DA9 /* Frameworks */,
+				F1293BF70E62A8EB822B60CBCD497EAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SinchCallingUIKit-SinchCallingUIKit";
+			productName = "SinchCallingUIKit-SinchCallingUIKit";
+			productReference = 1BDAFDB450E4FACBE5D4A881EE006507 /* SinchCallingUIKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		EE1148C4208D66831D831C265C9B7E3F /* SinchService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DC9F6BF1BD1A3921CCF04A8CBE79794 /* Build configuration list for PBXNativeTarget "SinchService" */;
+			buildPhases = (
+				1AF5F4F2062A0A8988F46E1B150A679F /* Sources */,
+				8F9BF9F0FAC291BB46285BF628455369 /* Frameworks */,
+				E2991C4F6D068A0972CBC72095763AD3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SinchService;
+			productName = SinchService;
+			productReference = 44385FD3EDEE405783AB4D4181F71103 /* libSinchService.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FE2428C920458F93EFC9AC9FC99ADFC5 /* SinchCallingUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CC1A7206B4328F7CF6664AEF1512C31 /* Build configuration list for PBXNativeTarget "SinchCallingUIKit" */;
+			buildPhases = (
+				D0E207ECABDAAC264AF6F37A14330416 /* Sources */,
+				66C84A904B60394D0209AD9B1D19BEF6 /* Frameworks */,
+				65ECD7BB736E319E59D792CE8891B40F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2D5ECB672A5156EB7FEE80445531F7A /* PBXTargetDependency */,
+				1DA35EA1B2A8C763E99D46545752FD3E /* PBXTargetDependency */,
+			);
+			name = SinchCallingUIKit;
+			productName = SinchCallingUIKit;
+			productReference = D9048B8464277F9848C0D2BD2A973C96 /* libSinchCallingUIKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FEE20C41AF4128C7A70766CAC7BFD64C /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 722BD64F3370935FD83C813853851BAB /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				0072A775E653879173B44AF860C32F03 /* Sources */,
+				3F3C92E223F9352CB0FA35F7EE009909 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AC317BD421C7F9BA462BBACC3487635 /* PBXTargetDependency */,
+				71A7018E7D4D6DFC14773B869760F71D /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 4F943239ED8BFCDBF7E12FD05F2A3E8D /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEE20C41AF4128C7A70766CAC7BFD64C /* Pods */,
+				FE2428C920458F93EFC9AC9FC99ADFC5 /* SinchCallingUIKit */,
+				2C939F7C0900D837960B29C516DFC7C7 /* SinchCallingUIKit-SinchCallingUIKit */,
+				EE1148C4208D66831D831C265C9B7E3F /* SinchService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1293BF70E62A8EB822B60CBCD497EAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56079BFDE26C5EBFD02C822EE49D93F7 /* CallScreenViewController.xib in Resources */,
+				31380DF3AE58B14D267EF14A692D0E1D /* answer_button.png in Resources */,
+				E1224E3544F8D82AF1AA021BD6F64D4B /* hangup.png in Resources */,
+				38C47CF3CB79FB042A981030F1CE76D6 /* incoming.wav in Resources */,
+				D173E56FCA52C8BA60D4945E69CBB416 /* keypad.png in Resources */,
+				18DE2430F4BF5F79FFA3CC8C76C3CE66 /* keypad_selected.png in Resources */,
+				A098E4F03661B907EF68DCE364D749BF /* mute.png in Resources */,
+				87DB13DADE21804E7FC9D40F8ACB04C9 /* mute_selected.png in Resources */,
+				296F7017604C187E4EBE813DE6757D59 /* ringback.wav in Resources */,
+				EA41E25EAE458432AFE57B24F2036250 /* speaker.png in Resources */,
+				2BD769D8D42514B228BCCCEC1A9E6831 /* speaker_selected.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0072A775E653879173B44AF860C32F03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B72E137DA53B6F7AA8DD1D9B0E14D8D4 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF5F4F2062A0A8988F46E1B150A679F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265170A247CCBCD46864547B00498E84 /* SINSClientsObserver.m in Sources */,
+				794E312D2743069C9A37AFA526F8FEBF /* SINSLazyAudioController.m in Sources */,
+				4E20516BD257ABADBCF7E2AA0D2BF9C4 /* SINSLazyCallClient.m in Sources */,
+				027B1E668855BE67202914E4332911C6 /* SINSLazyMessageClient.m in Sources */,
+				B5023AF707841859F01C2BE97ECC322F /* SINSLazyProxyBase.m in Sources */,
+				A069051577B201F75C8B2BFC95C31A1D /* SINSServicePersistence.m in Sources */,
+				272163FF2EAFB8613A820333554E5AE6 /* SINService.m in Sources */,
+				547E31D52C2FF6F320D272EB634FA5BA /* SINServiceError.m in Sources */,
+				B1D0F906F48BF779F910F40E0D657154 /* SinchService-dummy.m in Sources */,
+				A1A824CE131A2E97CB596E9B49E4E450 /* SinchService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E207ECABDAAC264AF6F37A14330416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DF74524ECC9672FBF37831AC5AB18F /* CallScreenViewController.m in Sources */,
+				B0BE11B5E34C8AE53E3FD382C0A60479 /* CallingManager.m in Sources */,
+				13793EBCB14259F6064768CC0973688C /* ClientDelegate.m in Sources */,
+				88A8D5C99B82CB5BFD392F4EF410404D /* ResourceLoader.m in Sources */,
+				04D567598FB2B3A3A2E0F1E31F6B2CD1 /* SinchCallingUIKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E174E868556B6876EDEC5DF9059565AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DA35EA1B2A8C763E99D46545752FD3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SinchService;
+			target = EE1148C4208D66831D831C265C9B7E3F /* SinchService */;
+			targetProxy = A3C9B5BBEE5A5ACA260FB1DA0DEED19B /* PBXContainerItemProxy */;
+		};
+		2AC317BD421C7F9BA462BBACC3487635 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SinchCallingUIKit;
+			target = FE2428C920458F93EFC9AC9FC99ADFC5 /* SinchCallingUIKit */;
+			targetProxy = 25173A127819BA8D5F59758D87D93B06 /* PBXContainerItemProxy */;
+		};
+		71A7018E7D4D6DFC14773B869760F71D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SinchService;
+			target = EE1148C4208D66831D831C265C9B7E3F /* SinchService */;
+			targetProxy = 54325C033773F2E81A6F2BF566A9F8C5 /* PBXContainerItemProxy */;
+		};
+		D2D5ECB672A5156EB7FEE80445531F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SinchCallingUIKit-SinchCallingUIKit";
+			target = 2C939F7C0900D837960B29C516DFC7C7 /* SinchCallingUIKit-SinchCallingUIKit */;
+			targetProxy = A46171A75599CDA3946478EE47598A36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03F06A908ED2DD5B7046965115B591C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C779098F8F9DC625C5EE3A9EBC6C644 /* SinchCallingUIKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SinchCallingUIKit/SinchCallingUIKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		070C1128B5BD760CEEFB9C74B7787316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C779098F8F9DC625C5EE3A9EBC6C644 /* SinchCallingUIKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SinchCallingUIKit/SinchCallingUIKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		10134860AC4C5DC698586E78B72EB6C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C779098F8F9DC625C5EE3A9EBC6C644 /* SinchCallingUIKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SinchCallingUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1022EF75AB5FEC9E243163DCD7F19882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C779098F8F9DC625C5EE3A9EBC6C644 /* SinchCallingUIKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SinchCallingUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2044D759DB24523EB5509F9E35B983AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3CB61F89849AFD004D615F781981804 /* SinchService-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SinchService/SinchService-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		37848FD06CC3B72D4A2C519B1618DAAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0196F8E79D05C216AE2F2149BE2DE2B3 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BB4CC2E43A80A3593BF2DF3D93BD6B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3CB61F89849AFD004D615F781981804 /* SinchService-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SinchService/SinchService-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		83FACD470BF8BB2676937834F3A262AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6357BE93CD22459A6402E9E3352EBE23 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35CC611EFC09930AB90DDFD2200D483C /* Build configuration list for PBXNativeTarget "SinchCallingUIKit-SinchCallingUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1022EF75AB5FEC9E243163DCD7F19882 /* Debug */,
+				10134860AC4C5DC698586E78B72EB6C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CC1A7206B4328F7CF6664AEF1512C31 /* Build configuration list for PBXNativeTarget "SinchCallingUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				070C1128B5BD760CEEFB9C74B7787316 /* Debug */,
+				03F06A908ED2DD5B7046965115B591C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DC9F6BF1BD1A3921CCF04A8CBE79794 /* Build configuration list for PBXNativeTarget "SinchService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB4CC2E43A80A3593BF2DF3D93BD6B2 /* Debug */,
+				2044D759DB24523EB5509F9E35B983AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		722BD64F3370935FD83C813853851BAB /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37848FD06CC3B72D4A2C519B1618DAAB /* Debug */,
+				83FACD470BF8BB2676937834F3A262AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

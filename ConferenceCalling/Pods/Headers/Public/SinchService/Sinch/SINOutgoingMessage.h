@@ -1,0 +1,1 @@
+../../../../SinchService/SinchService/PrivateHeaders/Sinch/SINOutgoingMessage.h

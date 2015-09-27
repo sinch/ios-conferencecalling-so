@@ -1,0 +1,1 @@
+../../../SinchService/SinchService/SINSLazyMessageClient.h

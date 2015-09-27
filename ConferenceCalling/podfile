@@ -1,0 +1,6 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+pod 'SinchCallingUIKit',:git=>'https://github.com/spacedsweden/SinchCallingUIKit.git'
+
+
+ [[CallingManager sharedManager] startClientWithKey:@"11b8a925-b72c-4dc7-8e62-8683ab058a2f" secret:@"EqyBQ5YwpEm09nfe/XED3g==" userName:[defaults stringForKey:@"userName"] sandbox:NO launchOptions:nil];

@@ -1,0 +1,7 @@
+CLANG_CXX_LIBRARY = libc++
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/SinchRTC"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/SinchCallingUIKit" "${PODS_ROOT}/Headers/Public/SinchRTC" "${PODS_ROOT}/Headers/Public/SinchRTC/Sinch" "${PODS_ROOT}/Headers/Public/SinchService" "${PODS_ROOT}/Headers/Public/SinchService/Sinch"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/SinchCallingUIKit" -isystem "${PODS_ROOT}/Headers/Public/SinchRTC" -isystem "${PODS_ROOT}/Headers/Public/SinchRTC/Sinch" -isystem "${PODS_ROOT}/Headers/Public/SinchService" -isystem "${PODS_ROOT}/Headers/Public/SinchService/Sinch"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"SinchCallingUIKit" -l"SinchService" -l"c++" -framework "AVFoundation" -framework "AudioToolbox" -framework "Security" -framework "Sinch"
+PODS_ROOT = ${SRCROOT}/Pods

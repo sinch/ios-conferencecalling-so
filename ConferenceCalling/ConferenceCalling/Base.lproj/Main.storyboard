@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2Y2-8w-XjP">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUs-Y4-Kpb">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="58" width="360" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbG-wC-z5X">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="28" width="360" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPf-1N-6vP">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="96" width="360" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lwy-Hd-GPE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="iUs-Y4-Kpb"/>
+                                <exclude reference="CbG-wC-z5X"/>
+                                <exclude reference="uPf-1N-6vP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="iUs-Y4-Kpb"/>
+                                <include reference="CbG-wC-z5X"/>
+                                <include reference="uPf-1N-6vP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="userName" destination="iUs-Y4-Kpb" id="8EA-Xx-Wfk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1738.5" y="351"/>
+        </scene>
+        <!--Conference View Controller-->
+        <scene sceneID="c4k-Yq-jMm">
+            <objects>
+                <viewController storyboardIdentifier="mainView" id="2Y2-8w-XjP" customClass="ConferenceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Srs-4P-hRu"/>
+                        <viewControllerLayoutGuide type="bottom" id="ROS-nR-ep9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WSU-Tk-gD4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSA-Sz-aR0">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="S-Symbol"/>
+                                <connections>
+                                    <action selector="CreateConference:" destination="2Y2-8w-XjP" eventType="touchUpInside" id="Suu-1C-94g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fU-zU-rUh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sUi-OD-KN8" kind="popoverPresentation" identifier="popOver" popoverAnchorView="6fU-zU-rUh" id="LXs-Wj-RaO">
+                                        <popoverArrowDirection key="popoverArrowDirection" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30980392156862746" green="0.0" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6fU-zU-rUh" firstAttribute="trailing" secondItem="WSU-Tk-gD4" secondAttribute="trailingMargin" id="2f1-2u-hqO"/>
+                            <constraint firstItem="6fU-zU-rUh" firstAttribute="top" secondItem="Srs-4P-hRu" secondAttribute="bottom" id="DUE-by-XYi">
+                                <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="XSA-Sz-aR0" firstAttribute="centerY" secondItem="WSU-Tk-gD4" secondAttribute="centerY" id="XQO-Lk-gkr">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-100"/>
+                            </constraint>
+                            <constraint firstItem="XSA-Sz-aR0" firstAttribute="centerX" secondItem="WSU-Tk-gD4" secondAttribute="centerX" id="ado-3P-pjj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="XSA-Sz-aR0"/>
+                                <exclude reference="6fU-zU-rUh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="XQO-Lk-gkr"/>
+                                <exclude reference="ado-3P-pjj"/>
+                                <exclude reference="2f1-2u-hqO"/>
+                                <exclude reference="DUE-by-XYi"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="XSA-Sz-aR0"/>
+                                <include reference="6fU-zU-rUh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="XQO-Lk-gkr"/>
+                                <include reference="ado-3P-pjj"/>
+                                <include reference="2f1-2u-hqO"/>
+                                <include reference="DUE-by-XYi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="H06-5k-OaJ"/>
+                    <connections>
+                        <outlet property="callButton" destination="XSA-Sz-aR0" id="rLl-b4-Qyr"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="login" id="bk9-4v-Sp2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMK-mL-Edr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685.5" y="420.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UTo-fb-kz4">
+            <objects>
+                <viewController id="sUi-OD-KN8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CQn-MW-vdr"/>
+                        <viewControllerLayoutGuide type="bottom" id="9b8-VC-btP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="osN-Yi-JDU">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Its like YO! But for conference calling, just click on the S. Invite friends via any social channel and wait for them to join" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoW-st-qh5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="AoW-st-qh5" secondAttribute="trailing" constant="-9" id="Khe-ot-zt2"/>
+                            <constraint firstItem="9b8-VC-btP" firstAttribute="top" secondItem="AoW-st-qh5" secondAttribute="bottom" constant="8" symbolic="YES" id="Kyk-U8-WyS"/>
+                            <constraint firstItem="AoW-st-qh5" firstAttribute="top" secondItem="CQn-MW-vdr" secondAttribute="bottom" constant="8" symbolic="YES" id="LhV-e8-j9E"/>
+                            <constraint firstItem="AoW-st-qh5" firstAttribute="leading" secondItem="osN-Yi-JDU" secondAttribute="leadingMargin" constant="-7" id="RjU-W5-tAP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="AoW-st-qh5"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Khe-ot-zt2"/>
+                                <exclude reference="LhV-e8-j9E"/>
+                                <exclude reference="RjU-W5-tAP"/>
+                                <exclude reference="Kyk-U8-WyS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="AoW-st-qh5"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Khe-ot-zt2"/>
+                                <include reference="LhV-e8-j9E"/>
+                                <include reference="RjU-W5-tAP"/>
+                                <include reference="Kyk-U8-WyS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="200" height="150"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="150"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNo-Rd-zFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949.5" y="-22.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="S-Symbol" width="208" height="208"/>
+    </resources>
+</document>

@@ -1,0 +1,27 @@
+PODS:
+  - SinchCallingUIKit (0.1.15):
+    - SinchRTC
+    - SinchService
+  - SinchRTC (3.7.1)
+  - SinchService (1.0.2):
+    - SinchService/SinchHeaders (= 1.0.2)
+  - SinchService/SinchHeaders (1.0.2)
+
+DEPENDENCIES:
+  - SinchCallingUIKit (from `https://github.com/spacedsweden/SinchCallingUIKit.git`)
+
+EXTERNAL SOURCES:
+  SinchCallingUIKit:
+    :git: https://github.com/spacedsweden/SinchCallingUIKit.git
+
+CHECKOUT OPTIONS:
+  SinchCallingUIKit:
+    :commit: 362bc2963701c21d56fff940d73e21ea2fbf531d
+    :git: https://github.com/spacedsweden/SinchCallingUIKit.git
+
+SPEC CHECKSUMS:
+  SinchCallingUIKit: de2206256eca3b6f484f20427110d51a85089b0a
+  SinchRTC: 58b08d88160e514c08a1c03305728349113d5379
+  SinchService: 3af981e6b9df04345788ca40a24dcd411eeb58ea
+
+COCOAPODS: 0.38.2
