@@ -11,4 +11,5 @@
 @interface ConferenceViewController : UIViewController<UIPopoverPresentationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *callButton;
 
+@property (weak, nonatomic) IBOutlet UIButton *invite;
 @end

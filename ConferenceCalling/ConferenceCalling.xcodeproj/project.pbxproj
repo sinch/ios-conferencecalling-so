@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		23AFE0004BC7A85D11774FE2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		778FCED71BB77EA8005B1A86 /* ConferenceCalling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConferenceCalling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		778FCED71BB77EA8005B1A86 /* SO!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SO!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		778FCEDB1BB77EA8005B1A86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		778FCEDD1BB77EA8005B1A86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		778FCEDE1BB77EA8005B1A86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		778FCED81BB77EA8005B1A86 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				778FCED71BB77EA8005B1A86 /* ConferenceCalling.app */,
+				778FCED71BB77EA8005B1A86 /* SO!.app */,
 				778FCEF01BB77EA9005B1A86 /* ConferenceCallingTests.xctest */,
 				778FCEFB1BB77EA9005B1A86 /* ConferenceCallingUITests.xctest */,
 			);
@@ -172,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		778FCED61BB77EA8005B1A86 /* ConferenceCalling */ = {
+		778FCED61BB77EA8005B1A86 /* SO! */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 778FCF041BB77EA9005B1A86 /* Build configuration list for PBXNativeTarget "ConferenceCalling" */;
+			buildConfigurationList = 778FCF041BB77EA9005B1A86 /* Build configuration list for PBXNativeTarget "SO!" */;
 			buildPhases = (
 				778E0DDF01CC24C01E5882AB /* Check Pods Manifest.lock */,
 				778FCED31BB77EA8005B1A86 /* Sources */,
@@ -186,9 +186,9 @@
 			);
 			dependencies = (
 			);
-			name = ConferenceCalling;
+			name = "SO!";
 			productName = ConferenceCalling;
-			productReference = 778FCED71BB77EA8005B1A86 /* ConferenceCalling.app */;
+			productReference = 778FCED71BB77EA8005B1A86 /* SO!.app */;
 			productType = "com.apple.product-type.application";
 		};
 		778FCEEF1BB77EA9005B1A86 /* ConferenceCallingTests */ = {
@@ -239,6 +239,11 @@
 					778FCED61BB77EA8005B1A86 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = TQTQ9H4D8T;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					778FCEEF1BB77EA9005B1A86 = {
 						CreatedOnToolsVersion = 7.0;
@@ -263,7 +268,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				778FCED61BB77EA8005B1A86 /* ConferenceCalling */,
+				778FCED61BB77EA8005B1A86 /* SO! */,
 				778FCEEF1BB77EA9005B1A86 /* ConferenceCallingTests */,
 				778FCEFA1BB77EA9005B1A86 /* ConferenceCallingUITests */,
 			);
@@ -363,12 +368,12 @@
 /* Begin PBXTargetDependency section */
 		778FCEF21BB77EA9005B1A86 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 778FCED61BB77EA8005B1A86 /* ConferenceCalling */;
+			target = 778FCED61BB77EA8005B1A86 /* SO! */;
 			targetProxy = 778FCEF11BB77EA9005B1A86 /* PBXContainerItemProxy */;
 		};
 		778FCEFD1BB77EA9005B1A86 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 778FCED61BB77EA8005B1A86 /* ConferenceCalling */;
+			target = 778FCED61BB77EA8005B1A86 /* SO! */;
 			targetProxy = 778FCEFC1BB77EA9005B1A86 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -483,7 +488,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ConferenceCalling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.diginfo.ConferenceCalling;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diginfo.SO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -494,14 +499,14 @@
 			baseConfigurationReference = AB101E6B495FA765C689FC07 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distrubution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distrubution";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ConferenceCalling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.diginfo.ConferenceCalling;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diginfo.SO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "1edc5383-3993-482d-adb8-fc06d8c294d8";
 			};
 			name = Release;
 		};
@@ -565,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		778FCF041BB77EA9005B1A86 /* Build configuration list for PBXNativeTarget "ConferenceCalling" */ = {
+		778FCF041BB77EA9005B1A86 /* Build configuration list for PBXNativeTarget "SO!" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				778FCF051BB77EA9005B1A86 /* Debug */,

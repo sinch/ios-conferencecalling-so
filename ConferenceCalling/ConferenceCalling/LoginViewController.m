@@ -27,7 +27,18 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.userName.layer.cornerRadius=8.0f;
+    self.userName.layer.masksToBounds=YES;
+    self.userName.layer.borderColor=[[UIColor whiteColor]CGColor];
+    self.userName.layer.borderWidth= 1.0f;
+    self.userName.delegate = self;
     // Do any additional setup after loading the view.
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    [self login:nil];
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning {
