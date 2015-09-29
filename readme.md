@@ -170,7 +170,7 @@ As you probably know, iOS have this wonderful share functionality for apps like 
 This snippet of code creates a special link, and composes a personal message that can be sent to anyone. The link is something your can register in your info.p list - whenever someone clicks the link they'll either be sent directly to your app, or to the App Store for downloading it. When they return from sharing, we're connecting the user to the conference. 
 
 ## Listen to URLTypes
-Open the info tab of your target to edit the p list and add an URL type to match the one you choose. In my case it's *soap://*. The iPhone will search for an app that listens, whenever someone clicks on an link with soap://.
+Open the info tab of your target to edit the p list and add an URL type to match the one you choose. In my case it's *soap://*. The iPhone will search for an app that listens, whenever someone clicks on a link with soap://.
 
 ![](images/project.png)
 
@@ -188,6 +188,6 @@ Now that we have a URL type defined, we can react to a clicked link instead of j
 
 Take a look at what the host passed to the app, and connect to the conference immediately. 
 
-Thats it! If you want to check out the finished version first, you can [download the app] (URL to Christian's app) on iTunes.
+That's it! If you want to check out the finished version first, you can [download the app] (URL to Christian's app) on iTunes.
 
 
