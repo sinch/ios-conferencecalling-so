@@ -1,4 +1,4 @@
-# Building a one button app for conference calling
+# Building a One-Button App for Conference Calling
 
 ##Press play
 Once you have created [your own Conference Calling system] (https://www.sinch.com/tutorials/build-conference-calling-system-c/), you need a nice button to go with it, right?
