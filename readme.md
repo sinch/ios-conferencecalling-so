@@ -1,15 +1,19 @@
 # Building a One-Button App for Conference Calling
 
-##Press play
-Once you have created [your own Conference Calling system] (https://www.sinch.com/tutorials/build-conference-calling-system-c/), you need a nice button to go with it, right?
+![](images/PJs.png)
 
-Lately, I've been thinking about building a one-button app that does something stupid just like YO!, and when we released Conference Calling, I thought of the awesome video conferencing sites that are nothing more than an URL. I wanted to make that kind of app for Conference calling on Mobile.
+##For lazy PJ days
+Remember [telephone hotlines back in the 80s] (http://guff.com/15-bizarre-1-900-numbers-from-the-80s-and-90s)? Ok, so, lately I've been thinking about building a one-button app that does something stupid just like [Yo] (https://www.justyo.co/), and when we released Conference Calling, I thought of the awesome video conferencing sites that are nothing more than a URL. I wanted to make that kind of app, but for Conference Calling on Mobile.
 
-So here come SO!, an app like YO! but for hanging out in voice-only group calling (in case you attend that business call in your PJs). The app will be built in iOS Share activity, and you only have to create the conference once. Then, you just send a link to your friends. And whenever you feel like it, you can open SO! and see who's active at the time (remember the telephone hotlines back in the 80s...).
-![](images/product_small.png) As always the full source code is available on Github, [click to download](https://github.com/sinch/ios-conferencecalling-so).
+Here comes **So**, an app like Yo, but for hanging out in voice-only group calling (in case you want to catch up with friends and family wearing your PJs). The app will be built in iOS Share activity, and you only have to create the conference once.
+
+Just send a link to your friends, and whenever you feel like it, open So and see who's active at the time (telephone hotlines ftw).
+![](images/product_small.png) As always the full source code is available on GitHub, [click to download](https://github.com/sinch/ios-conferencecalling-so).
+
+*If you haven’t already, go create [your own Conference Calling system] (https://www.sinch.com/tutorials/build-conference-calling-system-c/) first. But promise to come back for this awesome one-button app!*
 
 ## Setup 
-If you haven’t already, go to [sinch.com](https://www.sinch.com/signup) and sign up for free. Then, go to your apps at the dashboard and create a new sandbox app. Take note of your app’s unique key and secret. 
+Login to your Sinch account or go to [sinch.com](https://www.sinch.com/signup) and sign up for free. Then, go to your apps at the dashboard and create a new sandbox app. Take note of your app’s unique key and secret. 
 
 Open up XCode and create a new project using the Single-View Application template. 
 
@@ -141,7 +145,7 @@ To create a Conference ID, store it to defaults, etc., add the following in your
 ```
 
 ## Invite friends
-As you probably know, iOS have this wonderful share functionality for apps like the one we're creating right now. Users can super easy be a part of the menu and share the app to any social network that is available on their phone. Read more about the UIActivityViewController [here](http://www.codingexplorer.com/add-sharing-to-your-app-via-uiactivityviewcontroller/). 
+As you probably know, iOS have this wonderful share functionality for apps like the one we're creating right now. Users can super easy be a part of the menu and share the app to any social network that's available on their phone. Read more about the UIActivityViewController [here](http://www.codingexplorer.com/add-sharing-to-your-app-via-uiactivityviewcontroller/). 
 
 ```objectivec
 -(void)inviteFriends{
@@ -188,6 +192,6 @@ Now that we have a URL type defined, we can react to a clicked link instead of j
 
 Take a look at what the host passed to the app, and connect to the conference immediately. 
 
-That's it! If you want to check out the finished version first, you can [download the app] (URL to Christian's app) on iTunes.
+That's it. Hanging out with friends and family is now literally one button press away! If you want to check out the finished version first, you can [download the app] (URL to Christian's app) on iTunes.
 
 
