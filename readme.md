@@ -5,7 +5,8 @@
 ##For lazy PJ days
 Remember [telephone hotlines back in the 80s] (http://guff.com/15-bizarre-1-900-numbers-from-the-80s-and-90s)? Ok, so, lately I've been thinking about building a one-button app that does something stupid just like [Yo] (https://www.justyo.co/), and when we released Conference Calling, I thought of the awesome video conferencing sites that are nothing more than a URL. I wanted to make that kind of app, but for Conference Calling on Mobile.
 
-Here comes **So**, an app like Yo, but for hanging out in voice-only group calling (in case you want to catch up with friends and family wearing your PJs). The app will be built in iOS Share activity, and you only have to create the conference once.
+Here comes **So**, an app like Yo, but for hanging out in voice-only group calling (in case you want to catch up with friends and family wearing your PJs). So you creata a "room" when you install the app and after inviting your friends you always have a place where you can hangou (yeah google, this is true hangout). Just open the app click on the button and see if anyone is around. 
+To maximize this unicorn idea and get the virality going, the app will be built in iOS Share activity:)
 
 Just send a link to your friends, and whenever you feel like it, open So and see who's active at the time (telephone hotlines ftw).
 ![](images/product_small.png) As always the full source code is available on GitHub, [click to download](https://github.com/sinch/ios-conferencecalling-so).
