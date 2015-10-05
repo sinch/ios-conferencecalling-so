@@ -3,12 +3,12 @@
 ![](images/PJs.png)
 
 ##For lazy PJ days
-Remember [telephone hotlines back in the 80s] (http://guff.com/15-bizarre-1-900-numbers-from-the-80s-and-90s)? Ok, so, lately I've been thinking about building a one-button app that does something stupid just like [Yo] (https://www.justyo.co/), and when we released Conference Calling, I thought of the awesome video conferencing sites that are nothing more than a URL. I wanted to make that kind of app, but for Conference Calling on Mobile.
+Remember [telephone hotlines back in the 80s] (http://guff.com/15-bizarre-1-900-numbers-from-the-80s-and-90s)? Ok, so, our chief dev evangelist Christian have been thinking about building a one-button app that does something stupid just like [Yo] (https://www.justyo.co/). When we released [Conference Calling] (https://www.sinch.com/products/voice-api/conference-calling/), he thought of the awesome video conferencing sites that are nothing more than a URL, and he wanted to make that kind of app, but for Conference Calling on Mobile.
 
-Here comes **So**, an app like Yo, but for hanging out in voice-only group calling (in case you want to catch up with friends and family wearing your PJs). So you creata a "room" when you install the app and after inviting your friends you always have a place where you can hangou (yeah google, this is true hangout). Just open the app click on the button and see if anyone is around. 
-To maximize this unicorn idea and get the virality going, the app will be built in iOS Share activity:)
+Here comes **So**, an app like Yo, but for hanging out in voice-only group calling (in case you want to catch up with friends and family wearing your PJs). While downloading the app, you create a "room" and invite your friends to hangout in it (yeah Google, this is true hangout). Whenever you feel like it, open So, click on the button and see who's active at the time (telephone hotlines ftw).
 
-Just send a link to your friends, and whenever you feel like it, open So and see who's active at the time (telephone hotlines ftw).
+To maximize this unicorn idea and get the virality going, the app will be built in iOS Share activity.
+
 ![](images/product_small.png) As always the full source code is available on GitHub, [click to download](https://github.com/sinch/ios-conferencecalling-so).
 
 *If you haven’t already, go create [your own Conference Calling system] (https://www.sinch.com/tutorials/build-conference-calling-system-c/) first. But promise to come back for this awesome one-button app!*
@@ -193,6 +193,6 @@ Now that we have a URL type defined, we can react to a clicked link instead of j
 
 Take a look at what the host passed to the app, and connect to the conference immediately. 
 
-That's it. Hanging out with friends and family is now literally one button press away! If you want to check out the finished version first, you can [download the app] (URL to Christian's app) on iTunes.
+That's it. Hanging out with friends and family is now literally one button press away! If you want to check out Christian's finished version first, you can [download the app] (URL to Christian's app) on iTunes.
 
 
