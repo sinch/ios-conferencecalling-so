@@ -3,7 +3,7 @@
 ![](images/favourite_tee.png)
 
 ##For shirtless days
-Remember [telephone hotlines back in the 80s] (http://guff.com/15-bizarre-1-900-numbers-from-the-80s-and-90s)? Ok, so, our chief dev evangelist Christian have been thinking about building a one-button app that does something stupid just like [Yo] (https://www.justyo.co/). When we released [Conference Calling] (https://www.sinch.com/products/voice-api/conference-calling/), he thought of the awesome video conferencing sites that are nothing more than a URL, and he wanted to make that kind of app, but for Conference Calling on Mobile.
+Remember [telephone hotlines back in the 80s] (http://guff.com/15-bizarre-1-900-numbers-from-the-80s-and-90s)? Ok, so, I've been thinking about building a one-button app that does something stupid just like [Yo] (https://www.justyo.co/). When we released [Conference Calling] (https://www.sinch.com/products/voice-api/conference-calling/), I thought of the awesome video conferencing sites that are nothing more than a URL, and I wanted to make that kind of app, but for Conference Calling on Mobile.
 
 Here comes **So**, an app like Yo, but for hanging out in voice-only group calling (in case your one favourite tee's in the laundry, but you still want to catch up with friends and family...). While downloading the app, you create a "room" and invite your friends to hangout in it (yeah Google, this is true hangout). Whenever you feel like it, open So, click on the button and see who's active at the time (telephone hotlines ftw).
 
