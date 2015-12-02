@@ -1,24 +1,20 @@
 # Building a One-Button App for Conference Calling
 
-![](images/favourite_tee.png)
-
 ##For shirtless days
-Remember [telephone hotlines back in the 80s] (http://guff.com/15-bizarre-1-900-numbers-from-the-80s-and-90s)? Ok, so, I've been thinking about building a one-button app that does something stupid just like [Yo] (https://www.justyo.co/). When we released [Conference Calling] (https://www.sinch.com/products/voice-api/conference-calling/), I thought of the awesome video conferencing sites that are nothing more than a URL, and I wanted to make that kind of app, but for Conference Calling on Mobile.
+Remember [telephone hotlines back in the 80s] (http://guff.com/15-bizarre-1-900-numbers-from-the-80s-and-90s)? I've been thinking about building a one-button app that does something stupid just like [Yo] (https://www.justyo.co/). When we released [Conference Calling] (https://www.sinch.com/products/voice-api/conference-calling/), I thought of the awesome video conferencing sites that are nothing more than a URL, and I wanted to make that kind of app, but for Conference Calling on mobile.
 
-Here comes **So**, an app like Yo, but for hanging out in voice-only group calling (in case your one favourite tee's in the laundry, but you still want to catch up with friends and family...). While downloading the app, you create a "room" and invite your friends to hangout in it (yeah Google, this is true hangout). Whenever you feel like it, open So, click on the button and see who's active at the time (telephone hotlines ftw).
+Here comes **So**. An app like Yo, but for hanging out in voice-only group chat rooms. After you download the app, you create a "room" and invite your friends to hangout in it. Whenever you feel like it, open So, click on the button and see who's active at the time.
 
-To maximize this unicorn idea and get the virality going, the app will be built in iOS Share activity.
+![so app demo](images/product_small.png) As always the full source code is available on GitHub, [click to download](https://github.com/sinch/ios-conferencecalling-so).
 
-![](images/product_small.png) As always the full source code is available on GitHub, [click to download](https://github.com/sinch/ios-conferencecalling-so).
-
-*If you haven’t already, go create [your own Conference Calling system] (https://www.sinch.com/tutorials/build-conference-calling-system-c/) first. But promise to come back for this awesome one-button app!*
+*If you haven’t already, go create [your own Conference Calling system] (https://www.sinch.com/tutorials/build-conference-calling-system-c/) first. 
 
 ## Setup 
 Login to your Sinch account or go to [sinch.com](https://www.sinch.com/signup) and sign up for free. Then, go to your apps at the dashboard and create a new sandbox app. Take note of your app’s unique key and secret. 
 
-Open up XCode and create a new project using the Single-View Application template. 
+![sinch dashboard](images/sandbox-apps.png)
 
-Set up CocoaPods to work with our app. In this tutorial, we're going to use a small UIFramework I made.
+Open up XCode and create a new project using the Single-View Application template. Then set up CocoaPods to work with our app. In this tutorial, we're going to use a small **UIFramework** I made.
 
 Open the directory for the project you just created in Terminal and type:
 
@@ -32,7 +28,7 @@ Then open the file named Podfile and add the following line:
 pod 'SinchCallingUIKit',:git=>'https://github.com/spacedsweden/SinchCallingUIKit.git'
 ```
 
-After saving the file, install the pod by typing:
+After saving the file, install the pod by typing this into the terminal:
 
 ```
 pod install
@@ -43,20 +39,20 @@ Now, we’ll see an XCode workspace file with the extension “**.xcworkspace**�
 ## Story board UI
 Create a story board with two view controllers; one conference controller, and one login controller.
 
-### ConferenceController
-Create two buttons in ConferenceController - one is for calling and the other one is an invite button. 
+**ConferenceController**
+Create two buttons in ConferenceController. One is for calling and the other one is an invite button. 
 
-### LoginController
+**LoginController**
 Add a TextField and a Button to login.
 
-Set the ConferenceController scene as the initial ViewController if it's not already set.
+Set the **ConferenceController** scene as the initial ViewController, if it's not already set.
 
-Create a Modal segue to LoginController from ConferenceController, and call it login.
+Create a Modal segue to **LoginController** from **ConferenceController**, and call it **login**.
 
 ## First use Scenario
 Create a new ViewController, name it **ConferenceController**, and assign it to the ConferenceController view in the story board.
 
-The next thing is to check if this is a first use scenario. We're going to store the information, using NSUserDefault.
+The next thing is to check if this is a first use scenario. We're going to store the information, using **NSUserDefault**.
 
 ```objectivec
 -(void)viewDidAppear:(BOOL)animated
@@ -82,7 +78,8 @@ Now, create a LoginController and assign it to the LoginView in the story board.
 @property (weak, nonatomic) IBOutlet UITextField *userName;
 - (IBAction)login:(id)sender;
 ```
-When the user clicks, his or her username will be set to
+
+When the user clicks, their username will be set to
 **LoginViewController.m**
 
 ```objectivec
@@ -146,7 +143,7 @@ To create a Conference ID, store it to defaults, etc., add the following in your
 ```
 
 ## Invite friends
-As you probably know, iOS have this wonderful share functionality for apps like the one we're creating right now. Users can super easy be a part of the menu and share the app to any social network that's available on their phone. Read more about the UIActivityViewController [here](http://www.codingexplorer.com/add-sharing-to-your-app-via-uiactivityviewcontroller/). 
+As you probably know, iOS has this wonderful share functionality for apps like the one we're creating right now. Users can super easy be a part of the menu and share the app to any social network that's available on their phone. Read more about the UIActivityViewController [here](http://www.codingexplorer.com/add-sharing-to-your-app-via-uiactivityviewcontroller/). 
 
 ```objectivec
 -(void)inviteFriends{
@@ -172,12 +169,12 @@ As you probably know, iOS have this wonderful share functionality for apps like 
 }
 ```
 
-This snippet of code creates a special link, and composes a personal message that can be sent to anyone. The link is something your can register in your info.p list - whenever someone clicks the link they'll either be sent directly to your app, or to the App Store for downloading it. When they return from sharing, we're connecting the user to the conference. 
+This snippet of code creates a special link, and composes a personal message that can be sent to anyone. The link is something your can register in your **info.p** list - whenever someone clicks the link they'll either be sent directly to your app, or to the App Store for downloading it. When they return from sharing, we're connecting the user to the conference. 
 
 ## Listen to URLTypes
-Open the info tab of your target to edit the p list and add an URL type to match the one you choose. In my case it's *soap://*. The iPhone will search for an app that listens, whenever someone clicks on a link with soap://.
+Open the info tab of your target to edit the p list and add an URL type to match the one you choose. In my case it's `soap://`. The iPhone will search for an app that listens, whenever someone clicks on a link with `soap://`.
 
-![](images/project.png)
+![project settings](images/project.png)
 
 
 ## Reacting to a clicked URLTypes
