@@ -4,7 +4,9 @@ Remember [telephone hotlines back in the 80s] (http://guff.com/15-bizarre-1-900-
 
 Here comes **So**. An app like Yo, but for hanging out in voice-only group chat rooms. After you download the app, you create a "room" and invite your friends to hangout in it. Whenever you feel like it, open So, click on the button and see who's active at the time.
 
-![so app demo](images/product_small.png) As always the full source code is available on GitHub, [click to download](https://github.com/sinch/ios-conferencecalling-so).
+![so app demo](images/product_small.png) 
+
+As always the full source code is available on GitHub, [click to download](https://github.com/sinch/ios-conferencecalling-so).
 
 *If you haven’t already, go create [your own Conference Calling system] (https://www.sinch.com/tutorials/build-conference-calling-system-c/) first. 
 
