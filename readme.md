@@ -189,6 +189,6 @@ Now that we have a URL type defined, we can react to a clicked link instead of j
 
 Take a look at what the host passed to the app, and connect to the conference immediately. 
 
-That's it. Hanging out with friends and family is now literally one button press away! If you want to check out Christian's finished version first, you can [download the app] (URL to Christian's app) on iTunes.
+That's it. Hanging out with friends and family is now literally one button press away! If you want to check out Christian's finished version first, you can [download the app](https://itunes.apple.com/us/app/so!/id1044103096?mt=8) on iTunes.
 
 
