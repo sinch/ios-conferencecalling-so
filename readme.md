@@ -4,7 +4,7 @@ Remember [telephone hotlines back in the 80s] (http://guff.com/15-bizarre-1-900-
 
 Here comes **So**. An app like Yo, but for hanging out in voice-only group chat rooms. After you download the app, you create a "room" and invite your friends to hangout in it. Whenever you feel like it, open So, click on the button and see who's active at the time.
 
-![so app demo](images/product.png) 
+![so app demo](images/Product.png) 
 
 As always the full source code is available on GitHub, [click to download](https://github.com/sinch/ios-conferencecalling-so).
 
@@ -175,7 +175,7 @@ This snippet of code creates a special link, and composes a personal message tha
 ## Listen to URLTypes
 Open the info tab of your target to edit the p list and add an URL type to match the one you choose. In my case it's `soap://`. The iPhone will search for an app that listens, whenever someone clicks on a link with `soap://`.
 
-![project settings](images/project_1.png)
+![project settings](images/Project_1.png)
 
 
 ## Reacting to a clicked URLTypes
