@@ -8,8 +8,6 @@ Here comes **So**. An app like Yo, but for hanging out in voice-only group chat 
 
 As always the full source code is available on GitHub, [click to download](https://github.com/sinch/ios-conferencecalling-so).
 
-*If you haven’t already, go create [your own Conference Calling system] (https://www.sinch.com/tutorials/build-conference-calling-system-c/) first. 
-
 ## Setup 
 Login to your Sinch account or go to [sinch.com](https://www.sinch.com/signup) and sign up for free. Then, go to your apps at the dashboard and create a new sandbox app. Take note of your app’s unique key and secret. 
 
